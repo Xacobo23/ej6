@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="h-100 w-100 d-flex justify-content-center align-items-center" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body class="d-flex justify-content-center justify-items-center">
+    <main class="d-flex w-50  bg-info p-4 rounded-3 align-items-center">
+        <section class="d-flex pe-4 flex-column align-items-center">
+            <div>
+                <img class="img-fluid me-4 rounded-3" src="c1.png" alt="TShirts" id="t1">
+                <img class="img-fluid me-4 rounded-3 d-none" src="c2.png" alt="TShirts" id="t2">
+                <img class="img-fluid me-4 rounded-3 d-none" src="c3.png" alt="TShirts" id="t3">
+                <img class="img-fluid me-4 rounded-3 d-none" src="c4.png" alt="TShirts" id="t4">
+                <img class="img-fluid me-4 rounded-3 d-none" src="c5.png" alt="TShirts" id="t5">
+                <img class="img-fluid me-4 rounded-3 d-none" src="c6.png" alt="TShirts" id="t6">
+                <img class="img-fluid me-4 rounded-3 d-none" src="c7.png" alt="TShirts" id="t7">
+                <img class="img-fluid me-4 rounded-3 d-none" src="c8.png" alt="TShirts" id="t8">
+                <img class="img-fluid me-4 rounded-3 d-none" src="c9.png" alt="TShirts" id="t9">
+            </div>
+            
+
+            <div class="w-100 d-flex justify-content-between pe-4">
+                <button onclick="left()" id="left" data-click="0"><</button>
+                <p class="w-100 text-center d-flex justify-content-center align-items-center mb-0">White T-Shirt
+                </p>
+                <button onclick="right()" id="right">></button>
+            </div>
+
+            <p class="w-100 text-center ">12€</p>
+            <h4 class="w-100 text-center">Total:<span id="total"> 0€</span></h4>
+
+        </section>
+
+        <section class="d-flex justify-content-around align-items-center h-100 flex-column">
+            <form action="">
+
+                <h5 class="mt-9">Size</h5>
+                <select class="w-100 text-center" name="size" id="size">
+                    <option value="XXS">XXS</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+
+                <h5 class="mt-2">Colour</h5>
+                <select class="w-100 pb-2 text-center" name="" id="">
+                    <option value="Red">Red</option>
+                    <option value="Black">Black</option>
+                    <option value="Pink">Pink</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="White">White</option>
+                    <option value="Green">Green</option>
+                    <option value="Purple">Purple</option>
+                    <option value="Blue">Blue</option>
+                </select>
+
+                <h5 class="mt-2">Quantity</h5>
+
+                <input class="w-100 text-center" type="number" name="number" id="number" value="0" min="0" max="15">
+            </form>
+
+            <button onclick="calcular()" class="mb-3">Buy</button>
+        </section>
+    </main>
+
+</body>
+
+</html>
